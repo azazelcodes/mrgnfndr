@@ -5,7 +5,6 @@ import me.rayorsomething.mrgnfndr.Main;
 import me.rayorsomething.mrgnfndr.Reference;
 import me.rayorsomething.mrgnfndr.utility.MainUtils;
 import me.rayorsomething.mrgnfndr.commands.sub.Subcommand;
-import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.BlockPos;

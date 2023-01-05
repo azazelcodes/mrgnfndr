@@ -1,53 +1,21 @@
 package me.rayorsomething.mrgnfndr.utility;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.StringWriter;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Objects;
-import java.util.Set;
-import java.util.stream.Collectors;
-
-import javax.script.ScriptContext;
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
-import javax.script.SimpleScriptContext;
-
-import java.time.Instant;
-import java.util.LinkedList;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonPrimitive;
 
-import gg.essential.universal.USound;
-import gg.essential.universal.UChat;
-import gg.essential.universal.wrappers.message.UTextComponent;
 import me.rayorsomething.mrgnfndr.Config;
-import me.rayorsomething.mrgnfndr.Main;
-import me.rayorsomething.mrgnfndr.Reference;
-import net.minecraft.event.ClickEvent;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.ChatStyle;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.client.Minecraft;
-import net.minecraft.scoreboard.Score;
-import net.minecraft.scoreboard.ScorePlayerTeam;
-import net.minecraft.scoreboard.Scoreboard;
 
+import static me.rayorsomething.mrgnfndr.Config.enchants;
+import static me.rayorsomething.mrgnfndr.Config.maxCost;
 import static me.rayorsomething.mrgnfndr.utility.MainUtils.getJson;
 
 public class APIHandler {
-    static JsonObject bzJson;
-    static JsonObject npcJson;
     public static List < Integer > bzRBuy = new ArrayList < > ();
     public static List < Integer > bzRSell = new ArrayList < > ();
     public static List < String > bzNames = new ArrayList < > ();
@@ -56,11 +24,11 @@ public class APIHandler {
     public static void findMargins() {
         itemNames.clear();
 
-        JsonArray npcArray = Objects.requireNonNull(getJson("https://api.hypixel.net/resources/skyblock/items")).getAsJsonObject().get("items").getAsJsonArray();
+        JsonArray itemArray = Objects.requireNonNull(getJson("https://api.hypixel.net/resources/skyblock/items")).getAsJsonObject().get("items").getAsJsonArray();
 
-        for (JsonElement npcItem: npcArray) {
-            JsonObject npcCurrent = npcItem.getAsJsonObject();
-            JsonElement itemNameJSON = npcCurrent.get("name");
+        for (JsonElement item: itemArray) {
+            JsonObject itemCurrent = item.getAsJsonObject();
+            JsonElement itemNameJSON = itemCurrent.get("name");
 
             if (itemNameJSON != null) {
                 itemNames.add(itemNameJSON.getAsString());
@@ -85,10 +53,16 @@ public class APIHandler {
 
         int index = 0;
         for (String nameEntry : bzNames) {
-            if (itemNames.contains(nameEntry) && bzRBuy.get(index)-bzRSell.get(index) > Config.minMargin) {
-                MainUtils.sendMessageWithPrefix(String.format("Item: %i for %m margin!",itemNames.indexOf(nameEntry), bzRBuy.get(index)-bzRSell.get(index)));
-            } else if (bzRBuy.get(index)-bzRSell.get(index) > Config.minMargin) {
-                MainUtils.sendMessageWithPrefix(String.format("Item: %i for %m margin!",nameEntry, bzRBuy.get(index)-bzRSell.get(index)));
+            int margin = bzRBuy.get(index) - bzRSell.get(index);
+
+            if ((maxCost == 0 || bzRSell.get(index) < maxCost) && margin > Config.minMargin) {
+                if (itemNames.contains(nameEntry)) {
+                    MainUtils.sendMessageWithPrefix(String.format("Item: %1$s for %2$d margin!", itemNames.get(itemNames.indexOf(nameEntry)), margin));
+                } else if (enchants && nameEntry.contains("ENCHANTMENT_")) {
+                    MainUtils.sendMessageWithPrefix(String.format("Item: %1$s for %2$d margin!",nameEntry, margin));
+                } else {
+                    MainUtils.sendMessageWithPrefix(String.format("Item: %1$s for %2$d margin!",nameEntry, margin));
+                }
             }
             index++;
         }

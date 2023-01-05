@@ -2,7 +2,6 @@ package me.rayorsomething.mrgnfndr;
 
 import java.io.File;
 import java.net.URI;
-import java.util.Arrays;
 
 import gg.essential.universal.UDesktop;
 import gg.essential.vigilance.Vigilant;
@@ -13,8 +12,10 @@ public class Config extends Vigilant {
 
     @Property(type = PropertyType.NUMBER, category = "API Handling", subcategory = "Basic", name = "Minimum Margin", description = "The minimum amount of profit that is required for the mod to send you a margin listing", max = Integer.MAX_VALUE, increment = 5)
     public static int minMargin = 50;
-    //@Property(type = PropertyType.SWITCH, category = "Flipping", subcategory = "Basic", name = "Alert Sounds", description = "Whether a pling sound should be played upon flip sent")
-    //public static boolean alertSounds = true;
+    @Property(type = PropertyType.NUMBER, category = "API Handling", subcategory = "Basic", name = "Max Cost", description = "The maximum amount of cost that is allowed in a margin listing; 0 = OFF", max = Integer.MAX_VALUE, increment = 5)
+    public static int maxCost = 0;
+    @Property(type = PropertyType.SWITCH, category = "API Handling", subcategory = "Basic", name = "Send Enchantments", description = "Whether to send enchantments. ON = Send; OFF = Don't")
+    public static boolean enchants = true;
     //@Property(type = PropertyType.TEXT, category = "Confidential", name = "API Key", protectedText = true, description = "Run /api new to set it automatically, or paste one if you do not want to renew it")
     //public static String apiKey = "";
 
