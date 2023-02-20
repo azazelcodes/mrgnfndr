@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MRGNFNDR",
+  "name": "MRGNFNDR - Flipping Mod",
+  "description": "MRGNFNDR is part of BTTN, a multifunctional Hypixel Skyblock Mod to enhance the flipping experience",
+  "version": "unspecified",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["rayOrSomething"],
+  "credits": "The Forge and FML guys, for making the example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

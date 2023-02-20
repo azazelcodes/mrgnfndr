@@ -1,0 +1,535 @@
+Symbol range map extraction starting
+Processing 11 files
+processing me\rayorsomething\mrgnfndr\Config.java
+@|me\rayorsomething\mrgnfndr\Config.java|8|34|me.rayorsomething.mrgnfndr|package|me.rayorsomething.mrgnfndr|(file)
+Class Start: me.rayorsomething.mrgnfndr.Config
+   @|me\rayorsomething\mrgnfndr\Config.java|578|587|minMargin|field|me.rayorsomething.mrgnfndr.Config|minMargin|
+   @|me\rayorsomething\mrgnfndr\Config.java|856|863|maxCost|field|me.rayorsomething.mrgnfndr.Config|maxCost|
+   @|me\rayorsomething\mrgnfndr\Config.java|1085|1093|enchants|field|me.rayorsomething.mrgnfndr.Config|enchants|
+   @|me\rayorsomething\mrgnfndr\Config.java|1375|1379|File|class|java.io.File
+   @|me\rayorsomething\mrgnfndr\Config.java|1380|1391|CONFIG_FILE|field|me.rayorsomething.mrgnfndr.Config|CONFIG_FILE|
+   @|me\rayorsomething\mrgnfndr\Config.java|1398|1402|File|class|java.io.File
+   @|me\rayorsomething\mrgnfndr\Config.java|1452|1458|Config|class|me.rayorsomething.mrgnfndr.Config
+   @|me\rayorsomething\mrgnfndr\Config.java|1459|1467|INSTANCE|field|me.rayorsomething.mrgnfndr.Config|INSTANCE|
+   @|me\rayorsomething\mrgnfndr\Config.java|1474|1480|Config|class|me.rayorsomething.mrgnfndr.Config
+   Method Start: Config()V
+      @|me\rayorsomething\mrgnfndr\Config.java|1496|1502|Config|method|me.rayorsomething.mrgnfndr.Config|Config|()V
+      @|me\rayorsomething\mrgnfndr\Config.java|1521|1532|CONFIG_FILE|field|me.rayorsomething.mrgnfndr.Config|CONFIG_FILE
+      @|me\rayorsomething\mrgnfndr\Config.java|1561|1571|initialize|method|gg.essential.vigilance.Vigilant|initialize|()V
+   Method End: Config()V
+   Method Start: discord()V
+      @|me\rayorsomething\mrgnfndr\Config.java|1749|1756|discord|method|me.rayorsomething.mrgnfndr.Config|discord|()V
+      @|me\rayorsomething\mrgnfndr\Config.java|1769|1777|UDesktop|class|gg.essential.universal.UDesktop
+      @|me\rayorsomething\mrgnfndr\Config.java|1778|1784|browse|method|gg.essential.universal.UDesktop|browse|(Ljava/net/URI;)Z
+      @|me\rayorsomething\mrgnfndr\Config.java|1785|1788|URI|class|java.net.URI
+      @|me\rayorsomething\mrgnfndr\Config.java|1789|1795|create|method|java.net.URI|create|(Ljava/lang/String;)Ljava/net/URI;
+   Method End: discord()V
+   Method Start: github()V
+      @|me\rayorsomething\mrgnfndr\Config.java|1984|1990|github|method|me.rayorsomething.mrgnfndr.Config|github|()V
+      @|me\rayorsomething\mrgnfndr\Config.java|2003|2011|UDesktop|class|gg.essential.universal.UDesktop
+      @|me\rayorsomething\mrgnfndr\Config.java|2012|2018|browse|method|gg.essential.universal.UDesktop|browse|(Ljava/net/URI;)Z
+      @|me\rayorsomething\mrgnfndr\Config.java|2019|2022|URI|class|java.net.URI
+      @|me\rayorsomething\mrgnfndr\Config.java|2023|2029|create|method|java.net.URI|create|(Ljava/lang/String;)Ljava/net/URI;
+   Method End: github()V
+Class End  : me.rayorsomething.mrgnfndr.Config
+endProcessing me\rayorsomething\mrgnfndr\Config.java
+
+processing me\rayorsomething\mrgnfndr\Main.java
+@|me\rayorsomething\mrgnfndr\Main.java|8|34|me.rayorsomething.mrgnfndr|package|me.rayorsomething.mrgnfndr|(file)
+Class Start: me.rayorsomething.mrgnfndr.Main
+   @|me\rayorsomething\mrgnfndr\Main.java|616|622|String|class|java.lang.String
+   @|me\rayorsomething\mrgnfndr\Main.java|623|627|uuid|field|me.rayorsomething.mrgnfndr.Main|uuid|
+   @|me\rayorsomething\mrgnfndr\Main.java|647|653|Config|class|me.rayorsomething.mrgnfndr.Config
+   @|me\rayorsomething\mrgnfndr\Main.java|654|660|config|field|me.rayorsomething.mrgnfndr.Main|config|
+   @|me\rayorsomething\mrgnfndr\Main.java|667|673|Config|class|me.rayorsomething.mrgnfndr.Config
+   @|me\rayorsomething\mrgnfndr\Main.java|695|710|MrgnfndrCommand|class|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand
+   @|me\rayorsomething\mrgnfndr\Main.java|711|725|commandManager|field|me.rayorsomething.mrgnfndr.Main|commandManager|
+   @|me\rayorsomething\mrgnfndr\Main.java|732|747|MrgnfndrCommand|class|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand
+   @|me\rayorsomething\mrgnfndr\Main.java|752|762|Subcommand|class|me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+   @|me\rayorsomething\mrgnfndr\Main.java|783|787|Help|class|me.rayorsomething.mrgnfndr.commands.sub.Help
+   @|me\rayorsomething\mrgnfndr\Main.java|807|811|Find|class|me.rayorsomething.mrgnfndr.commands.sub.Find
+   @|me\rayorsomething\mrgnfndr\Main.java|831|835|Cost|class|me.rayorsomething.mrgnfndr.commands.sub.Cost
+   @|me\rayorsomething\mrgnfndr\Main.java|855|861|Margin|class|me.rayorsomething.mrgnfndr.commands.sub.Margin
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|me\rayorsomething\mrgnfndr\Main.java|907|911|init|method|me.rayorsomething.mrgnfndr.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|me\rayorsomething\mrgnfndr\Main.java|912|934|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|me\rayorsomething\mrgnfndr\Main.java|935|940|event|param|me.rayorsomething.mrgnfndr.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|me\rayorsomething\mrgnfndr\Main.java|952|979|ProgressManager.ProgressBar|class|net.minecraftforge.fml.common.ProgressManager.ProgressBar
+      @|me\rayorsomething\mrgnfndr\Main.java|994|1009|ProgressManager|class|net.minecraftforge.fml.common.ProgressManager
+      @|me\rayorsomething\mrgnfndr\Main.java|1010|1014|push|method|net.minecraftforge.fml.common.ProgressManager|push|(Ljava/lang/String;I)Lnet/minecraftforge/fml/common/ProgressManager$ProgressBar;
+      @|me\rayorsomething\mrgnfndr\Main.java|1052|1056|step|method|net.minecraftforge.fml.common.ProgressManager.ProgressBar|step|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\Main.java|1101|1121|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|me\rayorsomething\mrgnfndr\Main.java|1122|1130|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|me\rayorsomething\mrgnfndr\Main.java|1131|1146|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|me\rayorsomething\mrgnfndr\Main.java|1147|1161|commandManager|field|me.rayorsomething.mrgnfndr.Main|commandManager
+      @|me\rayorsomething\mrgnfndr\Main.java|1172|1178|config|field|me.rayorsomething.mrgnfndr.Main|config
+      @|me\rayorsomething\mrgnfndr\Main.java|1179|1186|preload|method|gg.essential.vigilance.Vigilant|preload|()V
+      @|me\rayorsomething\mrgnfndr\Main.java|1198|1202|uuid|field|me.rayorsomething.mrgnfndr.Main|uuid
+      @|me\rayorsomething\mrgnfndr\Main.java|1205|1214|Minecraft|class|net.minecraft.client.Minecraft
+      @|me\rayorsomething\mrgnfndr\Main.java|1215|1227|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|me\rayorsomething\mrgnfndr\Main.java|1230|1240|getSession|method|net.minecraft.client.Minecraft|getSession|()Lnet/minecraft/util/Session;
+      @|me\rayorsomething\mrgnfndr\Main.java|1243|1254|getPlayerID|method|net.minecraft.util.Session|getPlayerID|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\Main.java|1266|1275|Reference|class|me.rayorsomething.mrgnfndr.Reference
+      @|me\rayorsomething\mrgnfndr\Main.java|1276|1282|logger|field|me.rayorsomething.mrgnfndr.Reference|logger
+      @|me\rayorsomething\mrgnfndr\Main.java|1283|1287|info|method|org.apache.logging.log4j.Logger|info|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\Main.java|1332|1347|ProgressManager|class|net.minecraftforge.fml.common.ProgressManager
+      @|me\rayorsomething\mrgnfndr\Main.java|1348|1351|pop|method|net.minecraftforge.fml.common.ProgressManager|pop|(Lnet/minecraftforge/fml/common/ProgressManager$ProgressBar;)V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+Class End  : me.rayorsomething.mrgnfndr.Main
+endProcessing me\rayorsomething\mrgnfndr\Main.java
+
+processing me\rayorsomething\mrgnfndr\Reference.java
+@|me\rayorsomething\mrgnfndr\Reference.java|8|34|me.rayorsomething.mrgnfndr|package|me.rayorsomething.mrgnfndr|(file)
+Class Start: me.rayorsomething.mrgnfndr.Reference
+   @|me\rayorsomething\mrgnfndr\Reference.java|171|177|String|class|java.lang.String
+   @|me\rayorsomething\mrgnfndr\Reference.java|178|184|MOD_ID|field|me.rayorsomething.mrgnfndr.Reference|MOD_ID|
+   @|me\rayorsomething\mrgnfndr\Reference.java|223|229|String|class|java.lang.String
+   @|me\rayorsomething\mrgnfndr\Reference.java|230|234|NAME|field|me.rayorsomething.mrgnfndr.Reference|NAME|
+   @|me\rayorsomething\mrgnfndr\Reference.java|274|280|String|class|java.lang.String
+   @|me\rayorsomething\mrgnfndr\Reference.java|281|288|VERSION|field|me.rayorsomething.mrgnfndr.Reference|VERSION|
+   @|me\rayorsomething\mrgnfndr\Reference.java|329|335|Logger|class|org.apache.logging.log4j.Logger
+   @|me\rayorsomething\mrgnfndr\Reference.java|336|342|logger|field|me.rayorsomething.mrgnfndr.Reference|logger|
+   @|me\rayorsomething\mrgnfndr\Reference.java|345|355|LogManager|class|org.apache.logging.log4j.LogManager
+   @|me\rayorsomething\mrgnfndr\Reference.java|356|365|getLogger|method|org.apache.logging.log4j.LogManager|getLogger|(Ljava/lang/String;)Lorg/apache/logging/log4j/Logger;
+Class End  : me.rayorsomething.mrgnfndr.Reference
+endProcessing me\rayorsomething\mrgnfndr\Reference.java
+
+processing me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java
+@|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|8|43|me.rayorsomething.mrgnfndr.commands|package|me.rayorsomething.mrgnfndr.commands|(file)
+Class Start: me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand
+   @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|701|711|Subcommand|class|me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+   @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|714|725|subcommands|field|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|subcommands|
+   Method Start: MrgnfndrCommand([Lme/rayorsomething/mrgnfndr/commands/sub/Subcommand;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|739|754|MrgnfndrCommand|method|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|MrgnfndrCommand|([Lme/rayorsomething/mrgnfndr/commands/sub/Subcommand;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|755|765|Subcommand|class|me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|768|779|subcommands|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|MrgnfndrCommand|([Lme/rayorsomething/mrgnfndr/commands/sub/Subcommand;)V|subcommands|0
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|796|807|subcommands|field|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|subcommands
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|810|821|subcommands|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|MrgnfndrCommand|([Lme/rayorsomething/mrgnfndr/commands/sub/Subcommand;)V|subcommands|0
+   Method End: MrgnfndrCommand([Lme/rayorsomething/mrgnfndr/commands/sub/Subcommand;)V
+   Method Start: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|863|889|canCommandSenderUseCommand|method|net.minecraft.command.ICommand|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|890|904|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|905|911|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|canCommandSenderUseCommand|(Lnet/minecraft/command/ICommandSender;)Z|sender|0
+   Method End: canCommandSenderUseCommand(Lnet/minecraft/command/ICommandSender;)Z
+   Method Start: getCommandAliases()Ljava/util/List;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|981|998|getCommandAliases|method|net.minecraft.command.ICommand|getCommandAliases|()Ljava/util/List;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|973|979|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|968|972|List|class|java.util.List
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1018|1024|Arrays|class|java.util.Arrays
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1025|1031|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+   Method End: getCommandAliases()Ljava/util/List;
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1086|1100|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1079|1085|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1171|1186|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1164|1170|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1187|1201|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1202|1208|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: sendHelp(Lnet/minecraft/command/ICommandSender;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1288|1296|sendHelp|method|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|sendHelp|(Lnet/minecraft/command/ICommandSender;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1297|1311|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1312|1318|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|sendHelp|(Lnet/minecraft/command/ICommandSender;)V|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1330|1334|List|class|java.util.List
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1335|1341|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1363|1373|LinkedList|class|java.util.LinkedList
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1392|1402|Subcommand|class|me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1421|1432|subcommands|field|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|subcommands
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1464|1472|isHidden|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|isHidden|()Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1508|1511|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1512|1530|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1531|1535|GRAY|field|net.minecraft.util.EnumChatFormatting|GRAY
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1564|1578|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1624|1639|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1644|1662|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1663|1672|DARK_GRAY|field|net.minecraft.util.EnumChatFormatting|DARK_GRAY
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1683|1701|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1702|1706|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1720|1741|getCommandDescription|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandDescription|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1778|1784|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|sendHelp|(Lnet/minecraft/command/ICommandSender;)V|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1785|1799|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1804|1821|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1822|1840|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1841|1845|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1863|1881|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1882|1887|GREEN|field|net.minecraft.util.EnumChatFormatting|GREEN
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1906|1915|Reference|class|me.rayorsomething.mrgnfndr.Reference
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1916|1923|VERSION|field|me.rayorsomething.mrgnfndr.Reference|VERSION
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1933|1939|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|1940|1944|join|method|java.lang.String|join|(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+   Method End: sendHelp(Lnet/minecraft/command/ICommandSender;)V
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2006|2020|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2021|2035|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2036|2042|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2044|2050|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2053|2057|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2073|2077|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2105|2117|EssentialAPI|class|gg.essential.api.EssentialAPI
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2118|2128|getGuiUtil|method|gg.essential.api.EssentialAPI|getGuiUtil|()Lgg/essential/api/utils/GuiUtil;
+      ERROR SimpleName: openScreen null
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2142|2146|Main|class|me.rayorsomething.mrgnfndr.Main
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2147|2153|config|field|me.rayorsomething.mrgnfndr.Main|config
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2154|2157|gui|method|gg.essential.vigilance.Vigilant|gui|()Lgg/essential/vigilance/gui/SettingsGui;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2205|2215|Subcommand|class|me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2234|2245|subcommands|field|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|subcommands
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2265|2272|Objects|class|java.util.Objects
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2273|2279|equals|method|java.util.Objects|equals|(Ljava/lang/Object;Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2280|2284|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2300|2314|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2353|2367|processCommand|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2368|2374|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2376|2382|Arrays|class|java.util.Arrays
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2383|2394|copyOfRange|method|java.util.Arrays|copyOfRange|([Ljava/lang/Object;II)[Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2395|2399|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2404|2408|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2494|2503|MainUtils|class|me.rayorsomething.mrgnfndr.utility.MainUtils
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2504|2525|sendMessageWithPrefix|method|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2624|2638|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2660|2675|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2754|2763|MainUtils|class|me.rayorsomething.mrgnfndr.utility.MainUtils
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2764|2785|sendMessageWithPrefix|method|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2786|2804|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2805|2808|RED|field|net.minecraft.util.EnumChatFormatting|RED
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2935|2943|sendHelp|method|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|sendHelp|(Lnet/minecraft/command/ICommandSender;)V
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2944|2950|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2998|3021|addTabCompletionOptions|method|net.minecraft.command.ICommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2990|2996|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|2985|2989|List|class|java.util.List
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3022|3036|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3037|3043|sender|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3045|3051|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3054|3058|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3060|3068|BlockPos|class|net.minecraft.util.BlockPos
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3069|3072|pos|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|pos|2
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3084|3088|List|class|java.util.List
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3089|3095|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3117|3127|LinkedList|class|java.util.LinkedList
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3146|3156|Subcommand|class|me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3170|3181|subcommands|field|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|subcommands
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3211|3214|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3226|3240|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3267|3271|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+      Field: Array Length, skipping
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3306|3338|getListOfStringsMatchingLastWord|method|net.minecraft.command.CommandBase|getListOfStringsMatchingLastWord|([Ljava/lang/String;Ljava/util/Collection;)Ljava/util/List;
+      @|me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java|3339|3343|args|param|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|addTabCompletionOptions|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;|args|1
+   Method End: addTabCompletionOptions(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Ljava/util/List;
+Class End  : me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand
+endProcessing me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java
+
+processing me\rayorsomething\mrgnfndr\commands\sub\Cost.java
+@|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|8|47|me.rayorsomething.mrgnfndr.commands.sub|package|me.rayorsomething.mrgnfndr.commands.sub|(file)
+Class Start: me.rayorsomething.mrgnfndr.commands.sub.Cost
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|212|226|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|205|211|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: isHidden()Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|294|302|isHidden|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|isHidden|()Z
+   Method End: isHidden()Z
+   Method Start: getCommandUsage()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|368|383|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|361|367|String|class|java.lang.String
+   Method End: getCommandUsage()Ljava/lang/String;
+   Method Start: getCommandDescription()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|446|467|getCommandDescription|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandDescription|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|439|445|String|class|java.lang.String
+   Method End: getCommandDescription()Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|548|562|processCommand|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|563|577|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|578|584|sender|param|me.rayorsomething.mrgnfndr.commands.sub.Cost|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|586|592|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|595|599|args|param|me.rayorsomething.mrgnfndr.commands.sub.Cost|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|611|617|Config|class|me.rayorsomething.mrgnfndr.Config
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|618|625|maxCost|field|me.rayorsomething.mrgnfndr.Config|maxCost
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|628|635|Integer|class|java.lang.Integer
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|636|644|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|me\rayorsomething\mrgnfndr\commands\sub\Cost.java|645|649|args|param|me.rayorsomething.mrgnfndr.commands.sub.Cost|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+Class End  : me.rayorsomething.mrgnfndr.commands.sub.Cost
+endProcessing me\rayorsomething\mrgnfndr\commands\sub\Cost.java
+
+processing me\rayorsomething\mrgnfndr\commands\sub\Find.java
+@|me\rayorsomething\mrgnfndr\commands\sub\Find.java|8|47|me.rayorsomething.mrgnfndr.commands.sub|package|me.rayorsomething.mrgnfndr.commands.sub|(file)
+Class Start: me.rayorsomething.mrgnfndr.commands.sub.Find
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|248|262|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|241|247|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: isHidden()Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|330|338|isHidden|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|isHidden|()Z
+   Method End: isHidden()Z
+   Method Start: getCommandUsage()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|404|419|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|397|403|String|class|java.lang.String
+   Method End: getCommandUsage()Ljava/lang/String;
+   Method Start: getCommandDescription()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|482|503|getCommandDescription|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandDescription|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|475|481|String|class|java.lang.String
+   Method End: getCommandDescription()Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|590|604|processCommand|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|605|619|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|620|626|sender|param|me.rayorsomething.mrgnfndr.commands.sub.Find|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|628|634|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|637|641|args|param|me.rayorsomething.mrgnfndr.commands.sub.Find|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|653|663|APIHandler|class|me.rayorsomething.mrgnfndr.utility.APIHandler
+      @|me\rayorsomething\mrgnfndr\commands\sub\Find.java|664|675|findMargins|method|me.rayorsomething.mrgnfndr.utility.APIHandler|findMargins|()V
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+Class End  : me.rayorsomething.mrgnfndr.commands.sub.Find
+endProcessing me\rayorsomething\mrgnfndr\commands\sub\Find.java
+
+processing me\rayorsomething\mrgnfndr\commands\sub\Help.java
+@|me\rayorsomething\mrgnfndr\commands\sub\Help.java|8|47|me.rayorsomething.mrgnfndr.commands.sub|package|me.rayorsomething.mrgnfndr.commands.sub|(file)
+Class Start: me.rayorsomething.mrgnfndr.commands.sub.Help
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|234|248|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|227|233|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: isHidden()Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|316|324|isHidden|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|isHidden|()Z
+   Method End: isHidden()Z
+   Method Start: getCommandUsage()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|390|405|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|383|389|String|class|java.lang.String
+   Method End: getCommandUsage()Ljava/lang/String;
+   Method Start: getCommandDescription()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|468|489|getCommandDescription|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandDescription|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|461|467|String|class|java.lang.String
+   Method End: getCommandDescription()Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|575|589|processCommand|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|590|604|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|605|611|sender|param|me.rayorsomething.mrgnfndr.commands.sub.Help|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|613|619|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|622|626|args|param|me.rayorsomething.mrgnfndr.commands.sub.Help|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|638|642|Main|class|me.rayorsomething.mrgnfndr.Main
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|643|657|commandManager|field|me.rayorsomething.mrgnfndr.Main|commandManager
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|658|666|sendHelp|method|me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand|sendHelp|(Lnet/minecraft/command/ICommandSender;)V
+      @|me\rayorsomething\mrgnfndr\commands\sub\Help.java|667|673|sender|param|me.rayorsomething.mrgnfndr.commands.sub.Help|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|sender|0
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+Class End  : me.rayorsomething.mrgnfndr.commands.sub.Help
+endProcessing me\rayorsomething\mrgnfndr\commands\sub\Help.java
+
+processing me\rayorsomething\mrgnfndr\commands\sub\Margin.java
+@|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|8|47|me.rayorsomething.mrgnfndr.commands.sub|package|me.rayorsomething.mrgnfndr.commands.sub|(file)
+Class Start: me.rayorsomething.mrgnfndr.commands.sub.Margin
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|294|308|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|287|293|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: isHidden()Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|378|386|isHidden|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|isHidden|()Z
+   Method End: isHidden()Z
+   Method Start: getCommandUsage()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|452|467|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|445|451|String|class|java.lang.String
+   Method End: getCommandUsage()Ljava/lang/String;
+   Method Start: getCommandDescription()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|530|551|getCommandDescription|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandDescription|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|523|529|String|class|java.lang.String
+   Method End: getCommandDescription()Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|634|648|processCommand|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|649|663|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|664|670|sender|param|me.rayorsomething.mrgnfndr.commands.sub.Margin|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|672|678|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|681|685|args|param|me.rayorsomething.mrgnfndr.commands.sub.Margin|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|697|703|Config|class|me.rayorsomething.mrgnfndr.Config
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|704|713|minMargin|field|me.rayorsomething.mrgnfndr.Config|minMargin
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|716|723|Integer|class|java.lang.Integer
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|724|732|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|me\rayorsomething\mrgnfndr\commands\sub\Margin.java|733|737|args|param|me.rayorsomething.mrgnfndr.commands.sub.Margin|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+Class End  : me.rayorsomething.mrgnfndr.commands.sub.Margin
+endProcessing me\rayorsomething\mrgnfndr\commands\sub\Margin.java
+
+processing me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java
+@|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|8|47|me.rayorsomething.mrgnfndr.commands.sub|package|me.rayorsomething.mrgnfndr.commands.sub|(file)
+Class Start: me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+   Method Start: getCommandName()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|161|175|getCommandName|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandName|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|154|160|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: isHidden()Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|299|307|isHidden|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|isHidden|()Z
+   Method End: isHidden()Z
+   Method Start: getCommandUsage()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|497|512|getCommandUsage|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandUsage|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|490|496|String|class|java.lang.String
+   Method End: getCommandUsage()Ljava/lang/String;
+   Method Start: getCommandDescription()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|721|742|getCommandDescription|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|getCommandDescription|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|714|720|String|class|java.lang.String
+   Method End: getCommandDescription()Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|1123|1137|processCommand|method|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|1138|1152|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|1153|1159|sender|param|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|sender|0
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|1161|1167|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java|1170|1174|args|param|me.rayorsomething.mrgnfndr.commands.sub.Subcommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z|args|1
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)Z
+Class End  : me.rayorsomething.mrgnfndr.commands.sub.Subcommand
+endProcessing me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java
+
+processing me\rayorsomething\mrgnfndr\utility\APIHandler.java
+@|me\rayorsomething\mrgnfndr\utility\APIHandler.java|8|42|me.rayorsomething.mrgnfndr.utility|package|me.rayorsomething.mrgnfndr.utility|(file)
+Class Start: me.rayorsomething.mrgnfndr.utility.APIHandler
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|527|534|Integer|class|java.lang.Integer
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|522|526|List|class|java.util.List
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|536|542|bzRBuy|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRBuy|
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|549|558|ArrayList|class|java.util.ArrayList
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|587|594|Integer|class|java.lang.Integer
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|582|586|List|class|java.util.List
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|596|603|bzRSell|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRSell|
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|610|619|ArrayList|class|java.util.ArrayList
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|648|654|String|class|java.lang.String
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|643|647|List|class|java.util.List
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|656|663|bzNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzNames|
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|670|679|ArrayList|class|java.util.ArrayList
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|708|714|String|class|java.lang.String
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|703|707|List|class|java.util.List
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|716|725|itemNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|itemNames|
+   @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|732|741|ArrayList|class|java.util.ArrayList
+   Method Start: findMargins()V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|771|782|findMargins|method|me.rayorsomething.mrgnfndr.utility.APIHandler|findMargins|()V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|795|805|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|819|826|Objects|class|java.util.Objects
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|827|841|requireNonNull|method|java.util.Objects|requireNonNull|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|842|849|getJson|method|me.rayorsomething.mrgnfndr.utility.MainUtils|getJson|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|903|918|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|930|939|JsonArray|class|com.google.gson.JsonArray
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|963|977|getAsJsonArray|method|com.google.gson.JsonObject|getAsJsonArray|(Ljava/lang/String;)Lcom/google/gson/JsonArray;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1001|1012|JsonElement|class|com.google.gson.JsonElement
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1045|1055|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1075|1090|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1106|1117|JsonElement|class|com.google.gson.JsonElement
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1145|1148|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1214|1223|itemNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|itemNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1224|1227|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1241|1252|getAsString|method|com.google.gson.JsonElement|getAsString|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1290|1299|itemNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|itemNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1300|1305|clear|method|java.util.Collection|clear|()V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1317|1323|bzRBuy|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRBuy
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1324|1329|clear|method|java.util.Collection|clear|()V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1341|1348|bzRSell|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRSell
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1349|1354|clear|method|java.util.Collection|clear|()V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1366|1373|bzNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1374|1379|clear|method|java.util.Collection|clear|()V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1392|1402|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1414|1421|Objects|class|java.util.Objects
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1422|1436|requireNonNull|method|java.util.Objects|requireNonNull|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1437|1444|getJson|method|me.rayorsomething.mrgnfndr.utility.MainUtils|getJson|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1489|1504|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1507|1510|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1523|1538|getAsJsonObject|method|com.google.gson.JsonElement|getAsJsonObject|()Lcom/google/gson/JsonObject;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1555|1564|Map.Entry|class|java.util.Map.Entry
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1565|1571|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1573|1584|JsonElement|class|com.google.gson.JsonElement
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1605|1613|entrySet|method|com.google.gson.JsonObject|entrySet|()Ljava/util/Set;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1631|1641|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1655|1665|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1676|1679|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1688|1694|getKey|method|java.util.Map.Entry|getKey|()Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1711|1721|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1734|1744|JsonObject|class|com.google.gson.JsonObject
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1756|1759|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1789|1795|bzRBuy|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRBuy
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1796|1799|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1806|1810|Math|class|java.lang.Math
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1811|1816|round|method|java.lang.Math|round|(D)J
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1817|1823|Double|class|java.lang.Double
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1824|1835|parseDouble|method|java.lang.Double|parseDouble|(Ljava/lang/String;)D
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1845|1848|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1861|1872|getAsString|method|com.google.gson.JsonElement|getAsString|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1891|1898|bzRSell|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRSell
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1899|1902|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1909|1913|Math|class|java.lang.Math
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1914|1919|round|method|java.lang.Math|round|(D)J
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1920|1926|Double|class|java.lang.Double
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1927|1938|parseDouble|method|java.lang.Double|parseDouble|(Ljava/lang/String;)D
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1948|1951|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1965|1976|getAsString|method|com.google.gson.JsonElement|getAsString|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|1995|2002|bzNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2003|2006|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2017|2020|get|method|com.google.gson.JsonObject|get|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2035|2043|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2087|2094|bzNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2095|2099|size|method|java.util.Collection|size|()I
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2135|2141|bzRBuy|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRBuy
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2142|2145|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2151|2158|bzRSell|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRSell
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2159|2162|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2184|2191|maxCost|field|me.rayorsomething.mrgnfndr.Config|maxCost
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2200|2207|bzRSell|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzRSell
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2208|2211|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2217|2224|maxCost|field|me.rayorsomething.mrgnfndr.Config|maxCost
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2238|2244|Config|class|me.rayorsomething.mrgnfndr.Config
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2245|2254|minMargin|field|me.rayorsomething.mrgnfndr.Config|minMargin
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2278|2284|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2297|2304|bzNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|bzNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2305|2308|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2333|2342|itemNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|itemNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2343|2351|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2386|2395|MainUtils|class|me.rayorsomething.mrgnfndr.utility.MainUtils
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2396|2417|sendMessageWithPrefix|method|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2418|2424|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2425|2431|format|method|java.lang.String|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2463|2472|itemNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|itemNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2473|2476|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2477|2486|itemNames|field|me.rayorsomething.mrgnfndr.utility.APIHandler|itemNames
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2487|2494|indexOf|method|java.util.List|indexOf|(Ljava/lang/Object;)I
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2545|2553|enchants|field|me.rayorsomething.mrgnfndr.Config|enchants
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2567|2575|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2615|2624|MainUtils|class|me.rayorsomething.mrgnfndr.utility.MainUtils
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2625|2646|sendMessageWithPrefix|method|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2647|2653|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\utility\APIHandler.java|2654|2660|format|method|java.lang.String|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+   Method End: findMargins()V
+Class End  : me.rayorsomething.mrgnfndr.utility.APIHandler
+endProcessing me\rayorsomething\mrgnfndr\utility\APIHandler.java
+
+processing me\rayorsomething\mrgnfndr\utility\MainUtils.java
+@|me\rayorsomething\mrgnfndr\utility\MainUtils.java|8|42|me.rayorsomething.mrgnfndr.utility|package|me.rayorsomething.mrgnfndr.utility|(file)
+Class Start: me.rayorsomething.mrgnfndr.utility.MainUtils
+   Method Start: getJson(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|369|376|getJson|method|me.rayorsomething.mrgnfndr.utility.MainUtils|getJson|(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|357|368|JsonElement|class|com.google.gson.JsonElement
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|377|383|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|384|391|jsonUrl|param|me.rayorsomething.mrgnfndr.utility.MainUtils|getJson|(Ljava/lang/String;)Lcom/google/gson/JsonElement;|jsonUrl|0
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|421|424|URL|class|java.net.URL
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|435|438|URL|class|java.net.URL
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|439|446|jsonUrl|param|me.rayorsomething.mrgnfndr.utility.MainUtils|getJson|(Ljava/lang/String;)Lcom/google/gson/JsonElement;|jsonUrl|0
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|461|474|URLConnection|class|java.net.URLConnection
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|486|500|openConnection|method|java.net.URL|openConnection|()Ljava/net/URLConnection;
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|521|539|setRequestProperty|method|java.net.URLConnection|setRequestProperty|(Ljava/lang/String;Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|587|597|JsonParser|class|com.google.gson.JsonParser
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|600|605|parse|method|com.google.gson.JsonParser|parse|(Ljava/io/Reader;)Lcom/google/gson/JsonElement;
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|610|627|InputStreamReader|class|java.io.InputStreamReader
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|633|647|getInputStream|method|java.net.URLConnection|getInputStream|()Ljava/io/InputStream;
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|670|679|Exception|class|java.lang.Exception
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|699|714|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: getJson(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+   Method Start: sendMessageWithPrefix(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|783|804|sendMessageWithPrefix|method|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|805|811|String|class|java.lang.String
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|812|819|message|param|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V|message|0
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|831|836|UChat|class|gg.essential.universal.UChat
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|837|841|chat|method|gg.essential.universal.UChat|chat|(Ljava/lang/Object;)V
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|842|860|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|861|865|GOLD|field|net.minecraft.util.EnumChatFormatting|GOLD
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|886|904|EnumChatFormatting|class|net.minecraft.util.EnumChatFormatting
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|905|909|GRAY|field|net.minecraft.util.EnumChatFormatting|GRAY
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|912|919|message|param|me.rayorsomething.mrgnfndr.utility.MainUtils|sendMessageWithPrefix|(Ljava/lang/String;)V|message|0
+      @|me\rayorsomething\mrgnfndr\utility\MainUtils.java|920|930|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   Method End: sendMessageWithPrefix(Ljava/lang/String;)V
+Class End  : me.rayorsomething.mrgnfndr.utility.MainUtils
+endProcessing me\rayorsomething\mrgnfndr\utility\MainUtils.java
+

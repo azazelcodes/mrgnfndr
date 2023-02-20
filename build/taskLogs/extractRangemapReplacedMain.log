@@ -1,0 +1,13 @@
+Symbol range map extraction starting
+Processing 11 files
+processing me\rayorsomething\mrgnfndr\Config.java
+processing me\rayorsomething\mrgnfndr\Main.java
+processing me\rayorsomething\mrgnfndr\Reference.java
+processing me\rayorsomething\mrgnfndr\commands\MrgnfndrCommand.java
+processing me\rayorsomething\mrgnfndr\commands\sub\Cost.java
+processing me\rayorsomething\mrgnfndr\commands\sub\Find.java
+processing me\rayorsomething\mrgnfndr\commands\sub\Help.java
+processing me\rayorsomething\mrgnfndr\commands\sub\Margin.java
+processing me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java
+processing me\rayorsomething\mrgnfndr\utility\APIHandler.java
+processing me\rayorsomething\mrgnfndr\utility\MainUtils.java

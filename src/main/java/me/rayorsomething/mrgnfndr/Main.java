@@ -1,5 +1,6 @@
 package me.rayorsomething.mrgnfndr;
 
+import me.rayorsomething.mrgnfndr.commands.sub.*;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -8,9 +9,6 @@ import net.minecraftforge.fml.common.ProgressManager;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 import me.rayorsomething.mrgnfndr.commands.MrgnfndrCommand;
-import me.rayorsomething.mrgnfndr.commands.sub.Subcommand;
-import me.rayorsomething.mrgnfndr.commands.sub.Help;
-import me.rayorsomething.mrgnfndr.commands.sub.Find;
 
 // (partly) Taken from Mindlessly
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
@@ -19,7 +17,9 @@ public class Main {
     public static Config config = new Config();
     public static MrgnfndrCommand commandManager = new MrgnfndrCommand(new Subcommand[] {
             new Help(),
-            new Find()
+            new Find(),
+            new Cost(),
+            new Margin()
     });
 
     @EventHandler
