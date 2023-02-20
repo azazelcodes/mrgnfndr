@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "MRGNFNDR",
+  "name": "MRGNFNDR - Flipping Mod",
+  "description": "MRGNFNDR is part of BTTN, a multifunctional Hypixel Skyblock Mod to enhance the flipping experience",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["rayOrSomething"],
+  "credits": "The Forge and FML guys, for making the example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
