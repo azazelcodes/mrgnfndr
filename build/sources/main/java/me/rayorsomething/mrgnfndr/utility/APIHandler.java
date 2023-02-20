@@ -16,23 +16,21 @@ import static me.rayorsomething.mrgnfndr.Config.maxCost;
 import static me.rayorsomething.mrgnfndr.utility.MainUtils.getJson;
 
 public class APIHandler {
-    public static List<Integer> bzRBuy = new ArrayList<>();
-    public static List<Integer> bzRSell = new ArrayList<>();
-    public static List<String> bzNames = new ArrayList<>();
-    public static List<String> itemNames = new ArrayList<>();
+    private static List<Integer> bzRBuy;
+    private static List<Integer> bzRSell;
+    private static List<String> bzNames;
+    private static List<String> itemNames;
+
+    static {
+        bzRBuy = new ArrayList<>();
+        bzRSell = new ArrayList<>();
+        bzNames = new ArrayList<>();
+        itemNames = new ArrayList<>();
+    }
 
     public static void findMargins() {
-        JsonObject jsonObject = Objects.requireNonNull(getJson("https://api.hypixel.net/resources/skyblock/items")).getAsJsonObject();
-        JsonArray itemArray = jsonObject.getAsJsonArray("items");
-        for (JsonElement item : itemArray) {
-            JsonObject itemCurrent = item.getAsJsonObject();
-            JsonElement itemNameJSON = itemCurrent.get("name");
-            if (itemNameJSON != null) {
-                itemNames.add(itemNameJSON.getAsString());
-            }
-        }
+        loadItemNames();
 
-        itemNames.clear();
         bzRBuy.clear();
         bzRSell.clear();
         bzNames.clear();
@@ -43,7 +41,7 @@ public class APIHandler {
             JsonObject bzStatus = (JsonObject) bzCurrent.get("quick_status");
             bzRBuy.add((int) Math.round(Double.parseDouble(bzStatus.get("buyPrice").getAsString())));
             bzRSell.add((int) Math.round(Double.parseDouble(bzStatus.get("sellPrice").getAsString())));
-            bzNames.add(bzCurrent.get("product_id").toString());
+            bzNames.add(bzCurrent.get("product_id").getAsString());
         }
 
         for (int i = 0; i < bzNames.size(); i++) {
@@ -52,9 +50,27 @@ public class APIHandler {
                 String nameEntry = bzNames.get(i);
                 if (itemNames.contains(nameEntry)) {
                     MainUtils.sendMessageWithPrefix(String.format("Item: %1$s for %2$d margin!", itemNames.get(itemNames.indexOf(nameEntry)), margin));
-                } else if (enchants && nameEntry.contains("ENCHANTMENT_")) {
+                } else if (!enchants && nameEntry.contains("ENCHANTMENT_")) {
+                    // Do nothing
+                } else {
                     MainUtils.sendMessageWithPrefix(String.format("Item: %1$s for %2$d margin!", nameEntry, margin));
                 }
+            }
+        }
+    }
+
+    private static void loadItemNames() {
+        if (!itemNames.isEmpty()) {
+            return;
+        }
+
+        JsonObject jsonObject = Objects.requireNonNull(getJson("https://api.hypixel.net/resources/skyblock/items")).getAsJsonObject();
+        JsonArray itemArray = jsonObject.getAsJsonArray("items");
+        for (JsonElement item : itemArray) {
+            JsonObject itemCurrent = item.getAsJsonObject();
+            JsonElement itemNameJSON = itemCurrent.get("name");
+            if (itemNameJSON != null) {
+                itemNames.add(itemNameJSON.getAsString());
             }
         }
     }

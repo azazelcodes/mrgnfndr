@@ -33552,15 +33552,7 @@ End  Processing: me\rayorsomething\mrgnfndr\commands\sub\Subcommand.java
 
 Start Processing: me\rayorsomething\mrgnfndr\utility\APIHandler.java
 [method, me/rayorsomething/mrgnfndr/utility/APIHandler/findMargins, ()V]
-[method, java/util/Objects/requireNonNull, (Ljava/lang/Object;)Ljava/lang/Object;]
-[method, me/rayorsomething/mrgnfndr/utility/MainUtils/getJson, (Ljava/lang/String;)Lcom/google/gson/JsonElement;]
-[method, com/google/gson/JsonElement/getAsJsonObject, ()Lcom/google/gson/JsonObject;]
-[method, com/google/gson/JsonObject/getAsJsonArray, (Ljava/lang/String;)Lcom/google/gson/JsonArray;]
-[method, com/google/gson/JsonElement/getAsJsonObject, ()Lcom/google/gson/JsonObject;]
-[method, com/google/gson/JsonObject/get, (Ljava/lang/String;)Lcom/google/gson/JsonElement;]
-[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
-[method, com/google/gson/JsonElement/getAsString, ()Ljava/lang/String;]
-[method, java/util/Collection/clear, ()V]
+[method, me/rayorsomething/mrgnfndr/utility/APIHandler/loadItemNames, ()V]
 [method, java/util/Collection/clear, ()V]
 [method, java/util/Collection/clear, ()V]
 [method, java/util/Collection/clear, ()V]
@@ -33585,7 +33577,7 @@ Start Processing: me\rayorsomething\mrgnfndr\utility\APIHandler.java
 [method, com/google/gson/JsonElement/getAsString, ()Ljava/lang/String;]
 [method, java/util/Collection/add, (Ljava/lang/Object;)Z]
 [method, com/google/gson/JsonObject/get, (Ljava/lang/String;)Lcom/google/gson/JsonElement;]
-[method, java/lang/Object/toString, ()Ljava/lang/String;]
+[method, com/google/gson/JsonElement/getAsString, ()Ljava/lang/String;]
 [method, java/util/Collection/size, ()I]
 [method, java/util/List/get, (I)Ljava/lang/Object;]
 [method, java/util/List/get, (I)Ljava/lang/Object;]
@@ -33599,6 +33591,16 @@ Start Processing: me\rayorsomething\mrgnfndr\utility\APIHandler.java
 [method, java/lang/String/contains, (Ljava/lang/CharSequence;)Z]
 [method, me/rayorsomething/mrgnfndr/utility/MainUtils/sendMessageWithPrefix, (Ljava/lang/String;)V]
 [method, java/lang/String/format, (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+[method, me/rayorsomething/mrgnfndr/utility/APIHandler/loadItemNames, ()V]
+[method, java/util/Collection/isEmpty, ()Z]
+[method, java/util/Objects/requireNonNull, (Ljava/lang/Object;)Ljava/lang/Object;]
+[method, me/rayorsomething/mrgnfndr/utility/MainUtils/getJson, (Ljava/lang/String;)Lcom/google/gson/JsonElement;]
+[method, com/google/gson/JsonElement/getAsJsonObject, ()Lcom/google/gson/JsonObject;]
+[method, com/google/gson/JsonObject/getAsJsonArray, (Ljava/lang/String;)Lcom/google/gson/JsonArray;]
+[method, com/google/gson/JsonElement/getAsJsonObject, ()Lcom/google/gson/JsonObject;]
+[method, com/google/gson/JsonObject/get, (Ljava/lang/String;)Lcom/google/gson/JsonElement;]
+[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
+[method, com/google/gson/JsonElement/getAsString, ()Ljava/lang/String;]
 Adding 0 imports
 End  Processing: me\rayorsomething\mrgnfndr\utility\APIHandler.java
 
